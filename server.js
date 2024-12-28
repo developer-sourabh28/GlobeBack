@@ -27,7 +27,7 @@ mongoose.connect(MONGO_URI)
 
 // Middleware
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: ['http://localhost:3000',"https://globefront-m8kz.onrender.com"],
     methods: ['POST', 'GET', 'PUT', 'DELETE', 'PATCH'],
     credentials: true,
 }));
